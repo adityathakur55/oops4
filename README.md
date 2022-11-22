@@ -2,10 +2,6 @@
 
 //program to display all your watches collection using class,constructor,inheritance,virtual function,operator overloading.
 
-
-
-
-
 #include<iostream>
 using namespace std;
 class watches {
@@ -19,16 +15,15 @@ class watches {
 		cout<<"enter the balance u have in your account:"<<endl;
 		cin>>balance;
 		cout<<"enter amount to withdraw to buy a watches:"<<endl;
-		cin>>wdr;
-	
-		
+		cin>>wdr;		
 	}
-  virtual void show(){
+	
+virtual void show(){
   	cout<<" total no of watches are:"<<no<<endl;
   	cout <<"balance u have in your account is:"<<balance<<endl;
   	cout<<"amount to withdraw:"<<wdr<<endl;
   }
-  virtual void data() 
+virtual void data() 
 {
 	cout<< "Displaying data using virtual function";
 }
@@ -39,8 +34,7 @@ class sonata:public watches {
 	public:
 		int watches(int n){
 		int titan;
-		cout<<"total no. of titan's u have with u:"<<titan<<endl;
-		
+		cout<<"total no. of titan's u have with u:"<<titan<<endl;		
 	}
 
 	void info(){
@@ -49,10 +43,9 @@ class sonata:public watches {
 		cout<<"enter the balance u have in your account:"<<endl;
 		cin>>balance;
 		cout<<"enter amount to withdraw to buy watches:"<<endl;
-		cin>>wdr;
-	
-		
+		cin>>wdr;	
 	}
+	
  	void data()
 	{
  		cout<<"enter no. of timex u have"<<endl;
